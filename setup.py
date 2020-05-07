@@ -12,9 +12,9 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'mypackage'
+NAME = 'python_lib'
 DESCRIPTION = 'My short description for my project.'
-URL = 'https://github.com/me/myproject'
+URL = 'https://github.com/Jackybecomebetter/python_lib'
 EMAIL = '1412165974@qq.com'
 AUTHOR = 'jacky_huang'
 REQUIRES_PYTHON = '>=3.6.0'
@@ -103,9 +103,9 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=["script", "test.py"]),
+    # packages=find_packages(exclude=["script", "test.py"]),
     # If your package is a single module, use this instead of 'packages':
-    # py_modules=['mypackage'],
+    py_modules=['script/test.py'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
